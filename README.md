@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# What I Just Learned Learning Jest
 
-## Available Scripts
+After using a number of mature unit testing frameworks, I was introduced to [Jest](https://jestjs.io/). I mostly came into contact with it when contributing to other projects, but some new React & React Native projects on my plate became good opportunities to properly learn this popular testing framework.
 
-In the project directory, you can run:
+<!-- TOC -->
 
-### `npm start`
+- [Required pre-work](#required-pre-work)
+- [Setting up your environment](#setting-up-your-environment)
+- [Node.js](#nodejs)
+- [A Code Editor (IDE)](#a-code-editor-ide)
+- [Git](#git)
+- [Running the Workshop Example](#running-the-workshop-example)
+- [Clone the workshop repo from GitHub](#clone-the-workshop-repo-from-github)
+- [Exercises](#exercises)
+  <!-- /TOC -->
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Required pre-work
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**If you want to be ahead of the game, get your environment setup before you arrive at the workshop!** You can do this by completing each section of the instructions in this main README file.
 
-### `npm test`
+We will spend some time reviewing the steps to [setting up your development environment](#setup-your-environment) and [cloning the workshop repo from GitHub](#clone-the-workshop-repo-from-github), but we won't have time to download & install everything you'll need. Please come prepared!
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setting up your environment
 
-### `npm run build`
+_Here's what you'll need to get started ..._
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Node.js
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+I'm using **v10.15.3**, but any of the "Latest LTS: Dubnium" releases should be fine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To check which version you have installed, simply run:
 
-### `npm run eject`
+```bash
+node --version
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For maximum fun with various versions of Node.js, I recommend [installing NVM](https://github.com/creationix/nvm) for managing your installed/active versions of Node.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### A Code Editor (IDE)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Visual Studio Code](https://code.visualstudio.com/) is popular these days. Lots of folks prefer [Atom](https://ide.atom.io/). And [Sublime Text](https://www.sublimetext.com/) is awesome, too. You'll just want a nice code editor to do syntax highlighting and other handy code stuff for you.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Git
 
-## Learn More
+It's probably pre-installed on your Mac, or there's a ton of tutorials for installing git on the interwebs, just Google for `install git on mac`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Pro tip:** Make life easy for yourself and get a GUI for Git. [Sourcetree](https://www.sourcetreeapp.com/) is free and highly useful if you're a more visual person, or if you just want to keep your command line use to a minimum.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running the Workshop Example
 
-### Code Splitting
+The code has a sample web server and application, and some starter code for our end-to-end test exercises. It was created using Facebook's [Create React App](https://github.com/facebook/create-react-app).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Each exercise is in its own folder, and we'll work through them one by one. For each, there will be our starter code, as well as the full solution.
 
-### Analyzing the Bundle Size
+The example app called "Brewdog UI" exists in the `/brewdog-ui` directory. We'll run our unit tests against the components within this app.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+View the UI in your browser of choice at [http://localhost:3000](http://localhost:3000).
 
-### Making a Progressive Web App
+### Clone the workshop repo from GitHub
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+#### CLI
 
-### Advanced Configuration
+From your terminal, in whichever directory where you prefer to create your apps:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```bash
+git clone git@github.com:grantnorwood/what-i-just-learned-learning-jest.git
+```
 
-### Deployment
+#### Sourcetree
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+From the _Repository Browser_ or _File_ menu, click _New ..._ and choose to clone a new repo.
 
-### `npm run build` fails to minify
+The SSH url to the repo is: `git@github.com:grantnorwood/what-i-just-learned-learning-jest.git`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+✅ _**Congratulations, your pre-work is done!** But of course you are free to look ahead to the exercises we'll be working on ... you'll save yourself some time if you get the example application in [exercise-1](exercise-1) up and running before the workshop begins._
+
+## Exercises
+
+_Let's go!_
+
+- [Exercise 1: Setup the example application](exercise-1)
+- [Exercise 2: (to-do)](exercise-2)
